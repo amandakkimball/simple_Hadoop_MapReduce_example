@@ -2,9 +2,10 @@
 import sys
 import string
 from sklearn.feature_extraction import stop_words
+from nltk.corpus import stopwords
 
 # Define stopwords and punctuation
-stopwords = set(stop_words.ENGLISH_STOP_WORDS)
+stopwords = set(stop_words.ENGLISH_STOP_WORDS)|set(stop.words('english'))
 #stopwords = set(['the','and','if'])
 punc = set(string.punctuation)
 
